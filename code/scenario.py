@@ -35,13 +35,13 @@ def minimal_enclosing_hyperbox(x):
     return active_scenarios, numpy.asarray(box,dtype=float)
 
 
-def is_inside_box(x,box):
+def is_inside_box(x,abox):
     """
-    x: (nxd) array
-    box: (dx2) array, or list[list[2 float]] ex.: [[0,1],[3,8],[1,9]] <- a.k.a. interval iterable
+    x:    (nxd) array
+    abox: (dx2) array, or list[list[2 float]] ex.: [[0,1],[3,8],[1,9]] <- a.k.a. interval iterable
     """
     n,d = x.shape
-    box = numpy.asarray(box, dtype=float)
+    box = numpy.asarray(abox, dtype=float)
     box_lo = box[:,0]
     box_hi = box[:,1]
     inside = (matlib.repmat(box_lo,n,1) <= x) & (x <= matlib.repmat(box_hi,n,1))
