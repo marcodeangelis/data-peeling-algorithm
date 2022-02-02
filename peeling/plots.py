@@ -5,8 +5,8 @@ import matplotlib as matplotlib
 import matplotlib.pyplot as pyplot
 from matplotlib import gridspec
 
-from code.peeling import peeling_to_structure
-from code.fuzzy import samples_to_fuzzy_projection
+from peeling.peeling import peeling_to_structure
+from peeling.fuzzy import samples_to_fuzzy_projection
 
 FONTSIZE = 22
 

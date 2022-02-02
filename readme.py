@@ -1,8 +1,8 @@
-from code.fuzzy import samples_to_fuzzy_projection
-from code.examples import banana_data, banana_model, pickle_dump, pickle_load
-from code.peeling import data_peeling_algorithm, data_peeling_backward, peeling_to_structure,uniform
-from code.plots import plot_fuzzy, plot_peeling_nxd, plot_peeling_nxd_back, plot_scattermatrix
-from code import *
+from peeling.fuzzy import samples_to_fuzzy_projection
+from peeling.examples import banana_data, banana_model, pickle_dump, pickle_load
+from peeling.peeling import data_peeling_algorithm, data_peeling_backward, peeling_to_structure,uniform
+from peeling.plots import plot_fuzzy, plot_peeling_nxd, plot_peeling_nxd_back, plot_scattermatrix
+from peeling import *
 
 from matplotlib import pyplot
 import scipy.stats as stats

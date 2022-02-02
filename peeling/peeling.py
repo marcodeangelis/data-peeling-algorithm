@@ -1,6 +1,6 @@
 import numpy as numpy
-from code.scenario import minimal_enclosing_hyperbox,is_inside_box,epsLU
-from code.fuzzy import boxes_to_fuzzy_projection
+from peeling.scenario import minimal_enclosing_hyperbox,is_inside_box,epsLU
+from peeling.fuzzy import boxes_to_fuzzy_projection
 from scipy import stats
 
 # Forward problem
